@@ -390,15 +390,13 @@
  }
     async function run_psfree(){
     document.getElementById("run-jb-parent").style.opacity = "0";
-    //document.getElementById("console-parent").style.opacity = "1";
-    showMessage("[+] Webkit exploit (PSFree) (Step 0 - Readying)"), 
+    //document.getElementById("console-parent").style.opacity = "1"; 
+    showMessage("[+] running psfree for userland exploit..."),
+    debug_log("[+] running psfree for userland exploit..."); 
     await get_ready();
-    showMessage("Webkit Patch (PSFree) (Step 1 - UAF)"),
     await use_after_free(pop, s1);
-    showMessage("Webkit Patch (PSFree) (Step 2 - Double Free)"),
     await sleep(0);
     await double_free(s1);
-    showMessage("Webkit Patch (PSFree) (Step 2 - Triple Free)"),
     await triple_free(s1, jsview, view_leak_arr, view_leak);
     let prim = {
         read1(addr) {
