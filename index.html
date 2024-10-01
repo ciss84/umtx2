@@ -1,13 +1,18 @@
-<html manifest="cache.appcache">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>PS5 UMTX Auto Jailbreak</title>
+    <title>PSFREE AUTO GOLDHEN V2.4b17 (9.00)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-
+    <script>
+        function showMessage(msg) {
+            document.getElementById("message").innerHTML = msg;
+        }
+    </script>
+    <script defer src="loader.js"></script>
     <script defer src="int64.js"></script>
     <script defer src="rop.js"></script>
-    <script defer src="exploit.js"></script>
+    <script defer src="kexploit.js"></script>
     <script defer src="utils.js"></script>
     <script defer src="webkit.js"></script>
     <style>
@@ -24,20 +29,14 @@
         }
     </style>
 </head>
-
 <body onload="setTimeout(run_psfree, 1500);">
     <div style="margin-top: 15px; position: absolute; width: 100%;">
-    <br><h1><center><font style='color:#fff;font-size:46px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #ff5757;'><i>PS5 UMTX Jailbreak (1.xx-5.xx)</i></font></center></h1>
+    <h1><center><font style='color:#fff;font-size:46px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #ff5757;'><i>ESP32-S2 AUTO JAILBREAK FW V9.00</i></font></center></h1>
         <p id="current-fw" class="text-secondary" style="text-align: center; margin-bottom: 8px; padding-bottom: 0;">
         </p>
         <p id="listening-ip" class="text-secondary" style="text-align: center; margin-top: 0; padding-top: 0;">
             <br />
         </p>
-    </div>
-    <div style="position: absolute; margin: 20px; margin-right:28px; bottom: 0; right: 0px;" class="opacity-transition"
-        id="l2-redirect">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 35px;">
-        </div>
     </div>
         <div id="console-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
@@ -47,31 +46,16 @@
         <div id="run-jb-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
         </div>
-        <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 13px;"
-            class="info opacity-transition" id="credits">
-            <b id="version">v1.2</b><br />
-            <span>creds & greetz</span>
-            <h3>
-                <a href="https://x.com/fail0verflow">@fail0verflow</a>,
-                <a href="https://twitter.com/flat_z">@flat_z</a>,
-                <a href="https://twitter.com/SpecterDev">@SpecterDev</a>,
-                ChendoChap,
-                SlidyBat,
-                abc/psfree,
-                <br />
-                idlesauce,
-                <a href="https://x.com/znullptr">@znullptr</a>,
-                <a href="https://twitter.com/notnotzecoxao">@notnotzecoxao</a>,
-                <a href="https://twitter.com/SocraticBliss">@SocraticBliss</a>,
-                <a href="https://github.com/john-tornblom">John Tornblom</a>,
-                <a href="https://discord.gg/kbrzGuH3F6">PS5 R&D Discord</a>
-            </h3>
-        </center>
-    </div>
-    </div>
+    <br><br><br><br><br><br><br>
+    <div id="message" style='color:#fff;font-size:35px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #ff5757;'>Jailbreaking. Please, <font color="#ee596f">WAIT!!!</font></div>
+    <br><br><br><br><br><br><br><br><br>
+    <h2><a href="http://192.168.1.1/admin.html" style='color:#fff;font-size:31px;font-weight:bold;margin:0 0 0 0.0;text-shadow:3px 2px #ff5757;'">Settings ESP</a></h2>
+    <div style="background-color:#032140;color:white;position:fixed;left:0;bottom:-0px;width:100%;text-align:center;">
+    <font style='color:#87FF33'>Modder & Dev : </font>84Ciss - Find Me In Tweeter if you have any kind of issues !&nbsp;<a href="https://twitter.com/84Ciss" style='font-size:20px;text-align:center;color:yellow;'>@84Ciss</a>
+    <br><font style='color:#87FF33'>Special thanks : </font>*Many Many Thanks to all Contributors in PS4 Scene ∆❍X❑*
+</div>
     <script>
         document.getElementById("console-parent").style.opacity = 0;
     </script>
 </body>
-
 </html>
