@@ -389,6 +389,8 @@
     });
  }
     async function run_psfree(){
+    document.getElementById("run-jb-parent").style.opacity = "0";
+    document.getElementById("console-parent").style.opacity = "1";    
     showMessage("[+] Webkit exploit (PSFree) (Step 0 - Readying)"), 
     await get_ready();
     showMessage("Webkit Patch (PSFree) (Step 1 - UAF)"),
