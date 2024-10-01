@@ -390,7 +390,7 @@
  }
     async function run_psfree(){
     document.getElementById("run-jb-parent").style.opacity = "0";
-    //document.getElementById("console-parent").style.opacity = "1"; 
+    document.getElementById("console-parent").style.opacity = "1"; 
     showMessage("[+] running psfree for userland exploit..."),
     debug_log("[+] running psfree for userland exploit..."); 
     await get_ready();
